@@ -34,6 +34,8 @@ public class BollsApp {
             board.setNeighbours(item);
         }
 
+        board.buildChains();
+
         board.toConsole();
     }
 }

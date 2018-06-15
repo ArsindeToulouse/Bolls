@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="40c53ca2-050f-4de5-b4e7-116720f879b6" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/arsinde/BollsApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arsinde/BollsApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/arsinde/models/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arsinde/models/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/arsinde/models/Cell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arsinde/models/Cell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/arsinde/models/Chain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/arsinde/models/Chain.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,11 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BollsApp.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BollsApp.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/arsinde/BollsApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="33" selection-start-line="33" selection-end-line="33" />
+            <state relative-caret-position="364">
+              <caret line="38" selection-start-line="38" selection-end-line="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -31,29 +32,29 @@
       <file leaf-file-name="Cell.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/arsinde/models/Cell.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="357">
+              <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
               <folding>
-                <element signature="e#854#855#0" expanded="true" />
-                <element signature="e#911#912#0" expanded="true" />
+                <element signature="e#1037#1038#0" expanded="true" />
+                <element signature="e#1094#1095#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Board.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Board.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/arsinde/models/Board.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="986">
-              <caret line="64" column="41" selection-start-line="64" selection-start-column="41" selection-end-line="64" selection-end-column="41" />
+            <state relative-caret-position="478">
+              <caret line="93" selection-start-line="93" selection-end-line="93" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#588#589#0" expanded="true" />
                 <element signature="e#625#626#0" expanded="true" />
                 <element signature="e#882#883#0" expanded="true" />
                 <element signature="e#910#911#0" expanded="true" />
-                <element signature="e#1723#1724#0" expanded="true" />
-                <element signature="e#1785#1786#0" expanded="true" />
+                <element signature="e#3797#3798#0" expanded="true" />
+                <element signature="e#3865#3866#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -62,8 +63,20 @@
       <file leaf-file-name="Chain.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/arsinde/models/Chain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="26" column="37" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
+            <state relative-caret-position="306">
+              <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+              <folding>
+                <element signature="e#371#372#0" expanded="true" />
+                <element signature="e#413#414#0" expanded="true" />
+                <element signature="e#404#405#0" expanded="true" />
+                <element signature="e#423#424#0" expanded="true" />
+                <element signature="e#801#802#0" expanded="true" />
+                <element signature="e#833#834#0" expanded="true" />
+                <element signature="e#891#892#0" expanded="true" />
+                <element signature="e#910#911#0" expanded="true" />
+                <element signature="e#994#995#0" expanded="true" />
+                <element signature="e#1013#1014#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -84,8 +97,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/.gitignire" />
-        <option value="$PROJECT_DIR$/src/com/arsinde/models/Chain.java" />
         <option value="$PROJECT_DIR$/src/com/arsinde/models/Cell.java" />
+        <option value="$PROJECT_DIR$/src/com/arsinde/models/Chain.java" />
         <option value="$PROJECT_DIR$/src/com/arsinde/BollsApp.java" />
         <option value="$PROJECT_DIR$/src/com/arsinde/models/Board.java" />
       </list>
@@ -225,7 +238,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -235,7 +247,7 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32943678" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32943678" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
@@ -245,7 +257,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3995749" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3995749" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -262,13 +274,13 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/arsinde/models/Board.java</url>
-          <line>73</line>
+          <url>file://$PROJECT_DIR$/src/com/arsinde/BollsApp.java</url>
+          <line>38</line>
           <properties />
-          <option name="timeStamp" value="1" />
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="4" />
+      <option name="time" value="7" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -287,8 +299,8 @@
         <state relative-caret-position="323">
           <caret line="19" selection-start-line="19" selection-end-line="19" />
           <folding>
-            <element signature="e#854#855#0" expanded="true" />
-            <element signature="e#911#912#0" expanded="true" />
+            <element signature="e#1037#1038#0" expanded="true" />
+            <element signature="e#1094#1095#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -303,8 +315,8 @@
             <element signature="e#625#626#0" expanded="true" />
             <element signature="e#882#883#0" expanded="true" />
             <element signature="e#910#911#0" expanded="true" />
-            <element signature="e#1723#1724#0" expanded="true" />
-            <element signature="e#1785#1786#0" expanded="true" />
+            <element signature="e#3797#3798#0" expanded="true" />
+            <element signature="e#3865#3866#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -313,6 +325,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="26" column="37" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
+          <folding>
+            <element signature="e#371#372#0" expanded="true" />
+            <element signature="e#413#414#0" expanded="true" />
+            <element signature="e#404#405#0" expanded="true" />
+            <element signature="e#423#424#0" expanded="true" />
+            <element signature="e#801#802#0" expanded="true" />
+            <element signature="e#833#834#0" expanded="true" />
+            <element signature="e#891#892#0" expanded="true" />
+            <element signature="e#910#911#0" expanded="true" />
+            <element signature="e#994#995#0" expanded="true" />
+            <element signature="e#1013#1014#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -331,8 +355,8 @@
         <state relative-caret-position="323">
           <caret line="19" selection-start-line="19" selection-end-line="19" />
           <folding>
-            <element signature="e#854#855#0" expanded="true" />
-            <element signature="e#911#912#0" expanded="true" />
+            <element signature="e#1037#1038#0" expanded="true" />
+            <element signature="e#1094#1095#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -354,8 +378,8 @@
             <element signature="e#625#626#0" expanded="true" />
             <element signature="e#882#883#0" expanded="true" />
             <element signature="e#910#911#0" expanded="true" />
-            <element signature="e#1723#1724#0" expanded="true" />
-            <element signature="e#1785#1786#0" expanded="true" />
+            <element signature="e#3797#3798#0" expanded="true" />
+            <element signature="e#3865#3866#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -375,8 +399,8 @@
         <state relative-caret-position="527">
           <caret line="41" column="52" selection-start-line="41" selection-start-column="52" selection-end-line="41" selection-end-column="52" />
           <folding>
-            <element signature="e#854#855#0" expanded="true" />
-            <element signature="e#911#912#0" expanded="true" />
+            <element signature="e#1037#1038#0" expanded="true" />
+            <element signature="e#1094#1095#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -398,8 +422,8 @@
             <element signature="e#625#626#0" expanded="true" />
             <element signature="e#882#883#0" expanded="true" />
             <element signature="e#910#911#0" expanded="true" />
-            <element signature="e#1723#1724#0" expanded="true" />
-            <element signature="e#1785#1786#0" expanded="true" />
+            <element signature="e#3797#3798#0" expanded="true" />
+            <element signature="e#3865#3866#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -412,13 +436,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/arsinde/Main.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/arsinde/models/Chain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="26" column="37" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/src.zip!/java/lang/Object.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="764">
@@ -442,37 +459,56 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/arsinde/models/Cell.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="357">
+          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
           <folding>
-            <element signature="e#854#855#0" expanded="true" />
-            <element signature="e#911#912#0" expanded="true" />
+            <element signature="e#1037#1038#0" expanded="true" />
+            <element signature="e#1094#1095#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/arsinde/BollsApp.java">
+    <entry file="file://$PROJECT_DIR$/src/com/arsinde/models/Chain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="306">
+          <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#371#372#0" expanded="true" />
+            <element signature="e#413#414#0" expanded="true" />
+            <element signature="e#404#405#0" expanded="true" />
+            <element signature="e#423#424#0" expanded="true" />
+            <element signature="e#801#802#0" expanded="true" />
+            <element signature="e#833#834#0" expanded="true" />
+            <element signature="e#891#892#0" expanded="true" />
+            <element signature="e#910#911#0" expanded="true" />
+            <element signature="e#994#995#0" expanded="true" />
+            <element signature="e#1013#1014#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/arsinde/models/Board.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="986">
-          <caret line="64" column="41" selection-start-line="64" selection-start-column="41" selection-end-line="64" selection-end-column="41" />
+        <state relative-caret-position="478">
+          <caret line="93" selection-start-line="93" selection-end-line="93" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#588#589#0" expanded="true" />
             <element signature="e#625#626#0" expanded="true" />
             <element signature="e#882#883#0" expanded="true" />
             <element signature="e#910#911#0" expanded="true" />
-            <element signature="e#1723#1724#0" expanded="true" />
-            <element signature="e#1785#1786#0" expanded="true" />
+            <element signature="e#3797#3798#0" expanded="true" />
+            <element signature="e#3865#3866#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/arsinde/BollsApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

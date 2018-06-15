@@ -4,15 +4,19 @@ import java.util.ArrayDeque;
 
 public class Chain {
 
-    private String chainTitle;
     private ArrayDeque<Cell> cellsChain = new ArrayDeque<>();
+    private ChainDirection direction;
 
-    public Chain(String chainTitle) {
-        this.chainTitle = chainTitle;
+    public enum ChainDirection {
+        LEFT_RIGHT, ULEFT_DRIGHT, UP_DOWN, URIGHT_DLEFT
     }
 
-    public String getChainTitle() {
-        return chainTitle;
+    public Chain(ChainDirection direction) {
+        this.direction = direction;
+    }
+
+    void addCell(final Cell cell) {
+        this.cellsChain.add(cell);
     }
 
     public ArrayDeque<Cell> getCellsChain() {
@@ -25,5 +29,17 @@ public class Chain {
 
     public Cell getLastCell() {
         return cellsChain.peekLast();
+    }
+
+    public ChainDirection getDirection() {
+        return direction;
+    }
+
+    public void addFirstIntoChain(final Cell cell) {
+        this.cellsChain.addFirst(cell);
+    }
+
+    public void addLastIntoChain(final Cell cell) {
+        this.cellsChain.addLast(cell);
     }
 }

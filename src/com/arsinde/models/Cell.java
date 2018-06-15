@@ -19,27 +19,34 @@ public class Cell {
         this.color = color;
     }
 
-    public void addNeighbour(NeighboursKey key, final Cell neighbour) {
+    void addNeighbour(NeighboursKey key, final Cell neighbour) {
         neighbours.put(key, neighbour);
     }
 
-    public int getX() {
+    int getX() {
         return x;
     }
 
-    public int getY() {
+    int getY() {
         return y;
     }
 
-    public String getColor() {
+    String getColor() {
         return color;
     }
 
-    public Cell getNeighbour(NeighboursKey key) {
+    Cell getNeighbour(NeighboursKey key) {
         return neighbours.get(key);
     }
 
-    public boolean equalsColor(final String color) {
+    boolean equals(final Cell cell) {
+        if (this.equalsColor(cell.getColor())) {
+            return (this.x == cell.getX()) && (this.y == cell.getY());
+        }
+        return false;
+    }
+
+    private boolean equalsColor(final String color) {
         return this.color.equalsIgnoreCase(color);
     }
 }

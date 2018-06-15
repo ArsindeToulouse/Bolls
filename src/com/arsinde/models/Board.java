@@ -57,6 +57,80 @@ public class Board {
         }
     }
 
+    public void buildChains() {
+
+        for (Cell item : cells) {
+            if (item != null) {
+                checkNeighboursInChains(item);
+            }
+        }
+
+    }
+
+    private void checkNeighboursInChains(Cell item) {
+        if (chains.size() != 0) {
+            for (Chain chain : chains) {
+                if (!chain.getCellsChain().contains(item)) {
+                    checkCell(item, chain);
+                }
+            }
+        } else {
+            Chain lr = new Chain(Chain.ChainDirection.LEFT_RIGHT);
+            lr.addCell(item);
+            chains.add(lr);
+            Chain uldr = new Chain(Chain.ChainDirection.ULEFT_DRIGHT);
+            uldr.addCell(item);
+            chains.add(uldr);
+            Chain ud = new Chain(Chain.ChainDirection.UP_DOWN);
+            ud.addCell(item);
+            chains.add(ud);
+            Chain urdl = new Chain(Chain.ChainDirection.URIGHT_DLEFT);
+            urdl.addCell(item);
+            chains.add(urdl);
+        }
+    }
+
+    private void checkCell(final Cell item, final Chain chain) {
+        Cell cellFirst = chain.getFirstCell();
+        Cell cellLast = chain.getLastCell();
+
+        if (chain.getDirection() == Chain.ChainDirection.LEFT_RIGHT) {
+            if (item.getNeighbour(Cell.NeighboursKey.RIGHT) != null && item.getNeighbour(Cell.NeighboursKey.RIGHT).equals(cellFirst)) {
+                chain.addFirstIntoChain(item);
+            }
+            if (item.getNeighbour(Cell.NeighboursKey.LEFT) != null && item.getNeighbour(Cell.NeighboursKey.LEFT).equals(cellLast)) {
+                chain.addLastIntoChain(item);
+            }
+        }
+
+        if (chain.getDirection() == Chain.ChainDirection.ULEFT_DRIGHT) {
+            if (item.getNeighbour(Cell.NeighboursKey.DRIGHT) != null && item.getNeighbour(Cell.NeighboursKey.DRIGHT).equals(cellFirst)) {
+                chain.addFirstIntoChain(item);
+            }
+            if (item.getNeighbour(Cell.NeighboursKey.ULEFT) != null && item.getNeighbour(Cell.NeighboursKey.ULEFT).equals(cellLast)) {
+                chain.addLastIntoChain(item);
+            }
+        }
+
+        if (chain.getDirection() == Chain.ChainDirection.UP_DOWN) {
+            if (item.getNeighbour(Cell.NeighboursKey.DOWN) != null && item.getNeighbour(Cell.NeighboursKey.DOWN).equals(cellFirst)) {
+                chain.addFirstIntoChain(item);
+            }
+            if (item.getNeighbour(Cell.NeighboursKey.UP) != null && item.getNeighbour(Cell.NeighboursKey.UP).equals(cellLast)) {
+                chain.addLastIntoChain(item);
+            }
+        }
+
+        if (chain.getDirection() == Chain.ChainDirection.URIGHT_DLEFT) {
+            if (item.getNeighbour(Cell.NeighboursKey.DLEFT) != null && item.getNeighbour(Cell.NeighboursKey.DLEFT).equals(cellFirst)) {
+                chain.addFirstIntoChain(item);
+            }
+            if (item.getNeighbour(Cell.NeighboursKey.URIGHT) != null && item.getNeighbour(Cell.NeighboursKey.URIGHT).equals(cellLast)) {
+                chain.addLastIntoChain(item);
+            }
+        }
+    }
+
     private int getCellId(final Cell cell) {
         return ((cell.getY() - 1) * width + cell.getX()) - 1;
     }
@@ -71,7 +145,6 @@ public class Board {
     }
 
     public void toConsole() {
-        int count = width * height;
         for (int i=1; i <= height; i++) {
             for (int j=1; j <= width; j++) {
                 int cellId = (i-1)*width + j;
