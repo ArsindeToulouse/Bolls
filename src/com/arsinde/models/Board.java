@@ -1,5 +1,7 @@
 package com.arsinde.models;
 
+import com.sun.istack.internal.Nullable;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -34,6 +36,38 @@ public class Board {
 
     public Chain getChain(int id) {
         return chains.get(id);
+    }
+
+    public Cell[] getCells() {
+        return cells;
+    }
+
+    public void setNeighbours(@Nullable final Cell cell) {
+
+        if (cell != null) {
+            int cellId = getCellId(cell);
+            addCell(cellId - width, Cell.NeighboursKey.UP, cell);
+            addCell(cellId - width + 1, Cell.NeighboursKey.URIGHT, cell);
+            addCell(cellId + 1, Cell.NeighboursKey.RIGHT, cell);
+            addCell(cellId + width + 1, Cell.NeighboursKey.DRIGHT, cell);
+            addCell(cellId + width, Cell.NeighboursKey.DOWN, cell);
+            addCell(cellId + width - 1, Cell.NeighboursKey.DLEFT, cell);
+            addCell(cellId - 1, Cell.NeighboursKey.LEFT, cell);
+            addCell(cellId - width - 1, Cell.NeighboursKey.ULEFT, cell);
+        }
+    }
+
+    private int getCellId(final Cell cell) {
+        return ((cell.getY() - 1) * width + cell.getX()) - 1;
+    }
+
+    private void addCell(final int id, Cell.NeighboursKey key, final Cell cell) {
+        if (id > 0 && id < width * height) {
+            Cell neighbour = cells[id];
+            if (neighbour != null) {
+                cell.addNeighbour(key, neighbour);
+            }
+        }
     }
 
     public void toConsole() {

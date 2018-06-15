@@ -29,7 +29,11 @@ public class BollsApp {
         board.addCell(44, new Cell(2, 7, "green"));
         board.addCell(47, new Cell(5, 7, "green"));
         board.addCell(50, new Cell(1, 8, "green"));
+
+        for (Cell item : board.getCells()) {
+            board.setNeighbours(item);
+        }
+
         board.toConsole();
-        
     }
 }
