@@ -7,7 +7,7 @@ public class BollsApp {
 
     public static void main(String[] args) {
 
-        Board board = new Board(3,4, 7, 9);
+        Board board = new Board(3,3, 7, 9);
         board.addCell(3, new Cell(3, 1, "blue"));
         board.addCell(10, new Cell(3, 2, "blue"));
         board.addCell(17, new Cell(3, 3, "blue"));
@@ -34,8 +34,10 @@ public class BollsApp {
             board.setNeighbours(item);
         }
 
-        board.buildChains();
-
         board.toConsole();
+        System.out.print("\n\n");
+
+        board.buildChains();
+        board.deleteChains();
     }
 }

@@ -35,11 +35,11 @@ public class Chain {
         return direction;
     }
 
-    public void addFirstIntoChain(final Cell cell) {
-        this.cellsChain.addFirst(cell);
+    public boolean addFirstIntoChain(final Cell cell) {
+        return this.cellsChain.offerFirst(cell);
     }
 
-    public void addLastIntoChain(final Cell cell) {
-        this.cellsChain.addLast(cell);
+    public boolean addLastIntoChain(final Cell cell) {
+        return this.cellsChain.offerLast(cell);
     }
 }

@@ -2,7 +2,7 @@ package com.arsinde.models;
 
 import java.util.HashMap;
 
-public class Cell {
+public class Cell implements Cloneable {
 
     private int x;
     private int y;
@@ -20,7 +20,7 @@ public class Cell {
     }
 
     void addNeighbour(NeighboursKey key, final Cell neighbour) {
-        neighbours.put(key, neighbour);
+        if (this.equalsColor(neighbour.getColor())) neighbours.put(key, neighbour);
     }
 
     int getX() {
@@ -39,6 +39,14 @@ public class Cell {
         return neighbours.get(key);
     }
 
+    public HashMap<NeighboursKey, Cell> getNeighbours() {
+        return neighbours;
+    }
+
+    void deleteNeighbour(NeighboursKey key) {
+        neighbours.remove(key);
+    }
+
     boolean equals(final Cell cell) {
         if (this.equalsColor(cell.getColor())) {
             return (this.x == cell.getX()) && (this.y == cell.getY());
@@ -48,5 +56,14 @@ public class Cell {
 
     private boolean equalsColor(final String color) {
         return this.color.equalsIgnoreCase(color);
+    }
+    private void setNeighbours(HashMap<NeighboursKey, Cell> set) {
+        neighbours.putAll(set);
+    }
+
+    protected Cell cloneCell() {
+        Cell newCell = new Cell(this.x, this.y, this.color);
+        newCell.setNeighbours(this.neighbours);
+        return newCell;
     }
 }
